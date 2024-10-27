@@ -15,7 +15,7 @@ func main() {
 
 	r := mux.NewRouter()
 	r.HandleFunc("/api/posts", handlers.GetMessages).Methods("GET")
-	r.HandleFunc("/api/posts/{id}", handlers.GetMessage).Methods("GET")
+	r.HandleFunc("/api/posts/{userId}", handlers.GetMessage).Methods("GET")
 
 	log.Println("Starting server on port 8080")
 	log.Fatal(http.ListenAndServe(":8080", r))
