@@ -1,6 +1,6 @@
 package models
 
-type Message struct {
+type Posts struct {
 	UserId int    `json:"userId"`
 	ID     string `json:"id"`
 	Title  string `json:"title"`
